@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,7 +10,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+:root {
+  ::-webkit-scrollbar {
+    display: none;
+  };
+  --bg: #6418C3;
+  --fg: #eaebf5;
+  --fg-t: rgba(227, 228, 232, 0.5);
+  --primary1: #255ff4;
+  --primary2: #5583f6;
+  --trans-dur: 0.3s;
+  font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
